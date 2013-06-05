@@ -1,0 +1,168 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	background-color: #aaa;
+}
+header {
+	background-color: #333;
+	padding: 8px;
+}
+header .header-img {
+	margin-right: 16px;
+}
+header h6 {
+	margin: 0;
+	color: #aaa;
+}
+.standalone-notification-device {
+	margin-top: 8px;
+	display: none;
+	color: #777;
+	font-style: italic;
+}
+.geo-notification-device {
+	display: none;
+}
+.results a,
+.results a:hover,
+.results a:active {
+	text-decoration: none;
+}
+.results a {
+	color: #fff;
+}
+.row {
+	background-color: #666;
+	border-bottom: 1px solid #888;
+	padding: 8px; 
+}
+.col {
+	margin: 0;
+	width: 20%;
+	float: left;
+}
+.smallcol {
+	text-align: center;
+	margin: 0;
+	width: 10%;
+	float: left;
+}
+.bigcol {
+	margin: 0;
+	width: 60%;
+	float: left;
+	text-align:right;
+}
+a.refresh {
+	text-align:center;
+	padding:8px 50px;
+	color:#000;
+	font-weight:bold;
+	background-color: #bbb;
+	-webkit-background-size: 30px 30px;
+	-moz-background-size: 30px 30px;
+	background-size: 30px 30px;			
+	background-image: -webkit-gradient(linear, left top, right bottom,
+						color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent),
+						color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)),
+						color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent),
+						to(transparent));
+	background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);            	
+}
+
+a.refresh.thinking {
+	-webkit-animation: animate-stripes 1s linear infinite;
+	-moz-animation: animate-stripes 1s linear infinite;      
+}
+
+@-webkit-keyframes animate-stripes { 
+	0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+
+@-moz-keyframes animate-stripes {
+	0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+
+.key.row {
+	background-color: #555;
+	border-top: 1px solid #777;
+	border-bottom: 1px solid #777;
+}
+.distance, .bikes, .docks, .key .name {
+	margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+.result .name {
+	font-size: 14px;
+}
+.distance {
+	color: rgba(255,255,255,0.6);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+}
+
+/* smaller text on the very smallest displays */
+@media all and (max-width: 479px) {
+  body .result.row .distance,
+  body .result.row .bikes,
+  body .result.row .docks {
+  	font-size: 16px;
+  }
+  body .result.row .name {
+  	font-size: 13px;
+  }
+  body header h1 {
+  	margin: 12px 0;
+  	font-size: 28px;
+  }
+  body header h4 {
+ 	margin: 8px 0;
+ 	font-size: 14px;
+  }
+}
+
+/* give some more breathing room on larger displays */
+@media all and (min-width: 640px) {
+  body .row,
+  body header {
+  	padding: 8px 64px;
+  }
+}
+
+
+/* clearfix */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */

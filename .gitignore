@@ -1,0 +1,5 @@
+# Ignore system-specific unneeded files
+.DS_Store
+
+# Ignore produced XML file
+src.xml
