@@ -4,6 +4,7 @@ Bikeshare Tracker is a lightweight PHP webapp to find closest stations. While ot
 Right now it's set up to access Capital Bikeshare data in Washington, DC, but can be easily adapted to other Alta-operated bicycle share programs.
 
 Contributors: nelsonmc
+
 Tags: bikeshare, cabi, bike, share, dc, alta, geolocation
 
 
